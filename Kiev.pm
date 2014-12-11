@@ -11,7 +11,7 @@ use Moo;
 use namespace::clean;
 
 # Version.
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Get XML.
 has xml => (
@@ -105,13 +105,13 @@ For more information about Kiev Map, click L<here|https://en.wikipedia.org/wiki/
  my $obj = Map::Tube::Kiev->new;
 
  # Get route.
- my $route = $obj->get_shortest_route(decode_utf8('TODO'), decode_utf8('TODO'));
+ my $route = $obj->get_shortest_route(decode_utf8('Берестейська'), decode_utf8('Оболонь'));
 
  # Print out type.
  print "Route: ".encode_utf8($route)."\n";
 
  # Output:
- # Route: TODO
+ # Route: Берестейська (Святошинсько-Броварська лінія), Шулявська (Святошинсько-Броварська лінія), Політехнічний інститут (Святошинсько-Броварська лінія), Вокзальна (Святошинсько-Броварська лінія), Університет (Святошинсько-Броварська лінія), Театральна (Святошинсько-Броварська лінія), Хрещатик (Святошинсько-Броварська лінія), Поштова площа (Куренівсько-Червоноармійська лінія), Контрактова площа (Куренівсько-Червоноармійська лінія), Тараса Шевченка (Куренівсько-Червоноармійська лінія), Петрівка (Куренівсько-Червоноармійська лінія), Оболонь (Куренівсько-Червоноармійська лінія)
 
 =head1 EXAMPLE2
 
@@ -147,19 +147,23 @@ L<namespace::clean>.
 L<Map::Tube>,
 L<Map::Tube::Barcelona>,
 L<Map::Tube::Berlin>,
+L<Map::Tube::Bucharest>,
 L<Map::Tube::Delhi>,
 L<Map::Tube::London>,
+L<Map::Tube::Kazan>,
+L<Map::Tube::Kharkiv>,
 L<Map::Tube::Minsk>,
 L<Map::Tube::Moscow>,
 L<Map::Tube::NYC>,
 L<Map::Tube::Prague>,
+L<Map::Tube::Samara>,
 L<Map::Tube::Sofia>,
 L<Map::Tube::Tokyo>,
 L<Map::Tube::Warsaw>.
 
 =head1 REPOSITORY
 
-L<https://github.com/Manwar/Map-Tube-Kiev>
+L<https://github.com/tupinek/Map-Tube-Kiev>
 
 =head1 AUTHOR
 
@@ -175,6 +179,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut

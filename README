@@ -59,13 +59,13 @@ EXAMPLE1
      my $obj = Map::Tube::Kiev->new;
 
      # Get route.
-     my $route = $obj->get_shortest_route(decode_utf8('TODO'), decode_utf8('TODO'));
+     my $route = $obj->get_shortest_route(decode_utf8('Берестейська'), decode_utf8('Оболонь'));
 
      # Print out type.
      print "Route: ".encode_utf8($route)."\n";
 
      # Output:
-     # Route: TODO
+     # Route: Берестейська (Святошинсько-Броварська лінія), Шулявська (Святошинсько-Броварська лінія), Політехнічний інститут (Святошинсько-Броварська лінія), Вокзальна (Святошинсько-Броварська лінія), Університет (Святошинсько-Броварська лінія), Театральна (Святошинсько-Броварська лінія), Хрещатик (Святошинсько-Броварська лінія), Поштова площа (Куренівсько-Червоноармійська лінія), Контрактова площа (Куренівсько-Червоноармійська лінія), Тараса Шевченка (Куренівсько-Червоноармійська лінія), Петрівка (Куренівсько-Червоноармійська лінія), Оболонь (Куренівсько-Червоноармійська лінія)
 
 EXAMPLE2
      # Pragmas.
@@ -92,13 +92,14 @@ DEPENDENCIES
     File::Share, Map::Tube, Moo, namespace::clean.
 
 SEE ALSO
-    Map::Tube, Map::Tube::Barcelona, Map::Tube::Berlin, Map::Tube::Delhi,
-    Map::Tube::London, Map::Tube::Minsk, Map::Tube::Moscow, Map::Tube::NYC,
-    Map::Tube::Prague, Map::Tube::Sofia, Map::Tube::Tokyo,
-    Map::Tube::Warsaw.
+    Map::Tube, Map::Tube::Barcelona, Map::Tube::Berlin,
+    Map::Tube::Bucharest, Map::Tube::Delhi, Map::Tube::London,
+    Map::Tube::Kazan, Map::Tube::Kharkiv, Map::Tube::Minsk,
+    Map::Tube::Moscow, Map::Tube::NYC, Map::Tube::Prague, Map::Tube::Samara,
+    Map::Tube::Sofia, Map::Tube::Tokyo, Map::Tube::Warsaw.
 
 REPOSITORY
-    <https://github.com/Manwar/Map-Tube-Kiev>
+    <https://github.com/tupinek/Map-Tube-Kiev>
 
 AUTHOR
     Michal Špaček <mailto:skim@cpan.org>
@@ -111,5 +112,5 @@ LICENSE AND COPYRIGHT
      BSD 2-Clause License
 
 VERSION
-    0.01
+    0.02
 
